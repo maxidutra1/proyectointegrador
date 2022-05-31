@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>El Peyote Asesino</title>
+</head>
+<body>
+  <div class="wrapper">
+      <div class="top">
+<header class="principal">
+<h1>El Peyote Asesino</h1>
+</header>
+
+<div class="entrada entrada1">
+<p class="price">Origen</p>
+<p>Peyote Asesino es una banda</p><p>de rock uruguayo de</p><p>hip-hop, rap y funk,</p><p> que se formó a mediados</p><p> de 1994 en Montevideo</p>
+</div>
+<div class="entrada entrada2">
+    <p class="price">Integrantes</p>
+    <p>Fernando Santullo, </p><p>Daniel Benia,</p><p> Juan Campodónico,</p><p> Pepe Canedo,</p><p>Carlos Casacuberta,</p><p> Bruno Tortorella,</p><p> Matías Rada</p>
+</div>
+ </div>
+<nav class="menu">
+    <button aria-expanded="false" aria-controls="menu-list">
+<span class="open">&#9776;</span>
+<span class="close">&#9747;</span>
+Menu
+</button>
+<ul id="menu-list">
+<li> <a href="#">La banda</a></li>
+<li><a href="#">Proximos conciertos</a></li>
+<li><a href="#">Discografia</a></li>
+<li><a href="#">Integrantes</a></li>
+</ul>
+</nav>
+
+
+
+<section class="gallery">
+<h2>Galeria de fotos</h2>
+<img src="/images/peyote-asesino-1.jpg" alt=""/>
+<img src="/images/peyote-asesino-2.jpg" alt=""/>
+<img src="/images/peyoteasesino3.jpg" alt=""/>
+<img src="/images/peyoteasesino5.jpg" alt=""/>
+
+
+
+</section>
+ </div>
+<main class="login">
+        <div class="login__form">
+            <h2 class="login__form__title">¡Ingresa!</h2>
+            <form>
+                <input type="text" name="username" id="username" placeholder="Ingrese un usuario">
+                <input type="password" name="pass" id="pass" placeholder="Contraseña">
+                <p class="recovery"><a href="">Recuperar contraseña</a></p>
+                <a href="./index.html" class="loginBtn">Ingresar</a>
+            </form>
+            <p>¿No eres miembro? <a href="./register.html">Registrate</a></p>
+        </div>
+    </main>
+
+
+    <main class="register">
+        <div class="register__form">
+            
+            <h2 class="register__form__title">¡Bienvenido!</h2>
+            <form>
+                <input type="text" name="name" id="name" placeholder="Ingrese un nombre">
+                <input type="text" name="surname" id="surname" placeholder="Ingrese un apellido">
+                <input type="text" name="username" id="username" placeholder="Ingrese un nombre de usuario">
+                <input type="password" name="pass" id="pass" placeholder="Contraseña">
+                <label class="termsLabel"><input type="checkbox" name="terms" id="terms">Términos y condiciones</label>
+                <a href="./index.html" class="registerBtn">Regístrate</a>
+            </form>
+            <p>¿Ya tienes una cuenta? <a href="./login.html">Ingresá</a></p>
+        </div>
+    </main>
+
+ <section class="contact" id="contact"><div class="contact__left">
+       <h2 class="contact__left__title">CONTACTO</h2>
+ <div class="contact__left__data">
+      <ul>
+    <li>
+                 <p>Dirección :  Es lo que hay 123, Uruguay.</p> </li>
+ <li> <p>Telefono : 12345.</p> </li>
+<li>
+     <p>Email :  <a href="mailto:peyoteasesino@mail.com">peyoteasesino@mail.com </a> </p>
+         </li> </ul> </div>
+       
+         <div> 
+            <footer>  
+            <p>&copy;El Peyote asesino está acá</p>
+            </footer>
+            </div> 
+    
+ <div>  
+ <ul class="social-icons">
+<li><a href="#">
+<i class="fa-brands fa-instagram"></i>
+</a></li>
+<li><a href="#">
+<i class="fa-brands fa-twitter"></i>
+</a></li>
+<li><a href="#">
+<i class="fa-brands fa-facebook"></i>
+</a></li></ul>
+                </div>
+             </div>
+
+          
+              
+
+
+</body>
+</html>
+
+
+<script>
+const navButton = document.querySelector("button[aria-expanded]");
+
+function toggleNav({ target })  {
+    const expandir = target.getAttribute("aria-expanded")=== 
+    "true" || false;
+    navButton.setAttribute("aria-expanded", !expandir)
+    
+
+}
+
+    navButton.addEventListener("click", toggleNav)
+
+
+
+</script>
+
+</body>
+</html>
